@@ -1,24 +1,27 @@
-*{
+*{ /* resetear los margin y padding de todo el documento */
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para logo de bsale */
 .logo{
     width: 40%;
+    overflow: hidden;
 }
 
-.logo a{
-    font-size: 40px;
+.logo img{
+    width: 100px;
+    border-radius: 10px;
 }
 
 
-/* FOOTER */
+/* FOOTER - Estilos aplicados a los elementos del footer personalizado */
 footer{
     background: #292b2c;
     padding-bottom: 0.1px;
 }
 
-.footer-content{
+.footer-content{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +81,9 @@ footer{
     margin-bottom: 60px;
 }
 
-@media screen and (max-width:800px) {
+/* Media Queries - cambio en los estilos para diferentes tipos de pantallas */
+
+@media screen and (max-width:800px) {/* media query para pantallas hasta 800px */
 
     .footer-content{
         justify-content: center;
@@ -101,7 +106,7 @@ footer{
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) { /*media query para pantallas hasta 500px */
 
     .social-media{
         width: 100%;
